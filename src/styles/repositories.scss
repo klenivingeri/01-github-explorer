@@ -1,0 +1,51 @@
+section.repository-list{
+
+    margin:40px;
+
+    h1{
+        margin-bottom: 16px;
+    }
+    ul{
+        list-style: none; // tira  as marcações da lista
+    }
+    li{
+        & + li{margin-top:10px;} // qualquer li que tenha uma li antes aplique isso
+     }
+    p{
+        font-size:14px;
+        color:#444;
+        margin-top:8px;
+    }
+    a{
+        display:inline-block; //permite colocar height(Altura) and width(Largura)
+        margin-top: 16px;
+        text-decoration: none; // tira o sublinhado do  link
+        color:#8257e6;
+
+    }
+}
+
+
+
+
+
+/**
+
+
+
+ // Referencia  o proprio elemento &
+ // 1)Pega o ultimo elemento**
+    li{
+    margin-top:10
+        &:last-child{
+        margin:0;
+        }
+    }
+
+            ou  
+  // 2)qualquer li que tenha uma li antes aplique isso
+    li{
+         & + li{margin-top:10px;}
+    }
+
+*/

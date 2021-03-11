@@ -1,11 +1,14 @@
 export function RepositoryItem(props){
     return(
         <li>
-        <strong>{props.enviandoDados?.name ?? 'Unform' }</strong>
+        <strong>{props.enviandoDados?.full_name ?? 'Unform' }</strong>
         <p>{props.enviandoDados?.description ?? 'Unform' }</p>
-        <a href={props.enviandoDados?.link ?? 'Unform' }>
+        <a href={props.enviandoDados?.html_url ?? 'Unform' }>
             Acessar repositório
         </a>
+        
     </li>
     );
 }
+
+
